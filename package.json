@@ -28,11 +28,11 @@
 	],
 	"repository": {
 		"type": "git",
-		"url": "git+https://github.com/k2wanko/kysely-do-sqlite.git"
+		"url": "git+https://github.com/k2wanko/kysely-cloudflare-do-sqlite.git"
 	},
-	"homepage": "https://github.com/k2wanko/kysely-do-sqlite#readme",
+	"homepage": "https://github.com/k2wanko/kysely-cloudflare-do-sqlite#readme",
 	"bugs": {
-		"url": "https://github.com/k2wanko/kysely-do-sqlite/issues"
+		"url": "https://github.com/k2wanko/kysely-cloudflare-do-sqlite/issues"
 	},
 	"engines": {
 		"node": ">=18.0.0"
