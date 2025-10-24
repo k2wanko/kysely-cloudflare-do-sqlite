@@ -2,18 +2,24 @@
 	"compilerOptions": {
 		// Environment setup & latest features
 		"lib": ["ESNext"],
-		"target": "ESNext",
-		"module": "Preserve",
+		"target": "ES2020",
+		"module": "ESNext",
 		"moduleDetection": "force",
-		"jsx": "react-jsx",
 		"allowJs": true,
-		"types": ["@cloudflare/workers-types", "@types/bun"],
+		"types": ["@cloudflare/workers-types"],
 
-		// Bundler mode
+		// Output settings for library build
+		"outDir": "dist",
+		"rootDir": "src",
+		"declaration": true,
+		"declarationMap": true,
+		"sourceMap": true,
+
+		// Module resolution
 		"moduleResolution": "bundler",
-		"allowImportingTsExtensions": true,
-		"verbatimModuleSyntax": true,
-		"noEmit": true,
+		"allowImportingTsExtensions": false,
+		"esModuleInterop": true,
+		"allowSyntheticDefaultImports": true,
 
 		// Best practices
 		"strict": true,
@@ -27,5 +33,6 @@
 		"noUnusedParameters": false,
 		"noPropertyAccessFromIndexSignature": false
 	},
-	"exclude": ["example"]
+	"include": ["src/**/*"],
+	"exclude": ["node_modules", "dist"]
 }

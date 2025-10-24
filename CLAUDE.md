@@ -1,4 +1,6 @@
-# kysely-do-sqlite
+# kysely-cloudflare-do-sqlite
+
+**IMPORTANT: Direct execution of `npm publish` from local environment is strictly prohibited.**
 
 # References
 - https://bun.com/llms-full.txt

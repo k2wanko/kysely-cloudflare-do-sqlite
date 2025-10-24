@@ -1,16 +1,56 @@
 {
 	"name": "kysely-cloudflare-do-sqlite",
 	"version": "0.1.0",
+	"description": "Kysely dialect for Cloudflare Durable Objects SQLite storage",
+	"author": "k2wanko",
+	"license": "MIT",
 	"type": "module",
+	"main": "./dist/index.js",
+	"module": "./dist/index.js",
+	"types": "./dist/index.d.ts",
+	"files": [
+		"dist/index.js",
+		"dist/index.d.ts",
+		"dist/index.js.map",
+		"dist/index.d.ts.map",
+		"README.md",
+		"LICENSE"
+	],
+	"keywords": [
+		"kysely",
+		"dialect",
+		"cloudflare",
+		"durable-objects",
+		"sqlite",
+		"sql",
+		"database",
+		"typescript"
+	],
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/k2wanko/kysely-do-sqlite.git"
+	},
+	"homepage": "https://github.com/k2wanko/kysely-do-sqlite#readme",
+	"bugs": {
+		"url": "https://github.com/k2wanko/kysely-do-sqlite/issues"
+	},
+	"engines": {
+		"node": ">=18.0.0"
+	},
 	"scripts": {
+		"build": "tsc",
+		"dev": "tsc --watch",
 		"lint": "biome check && tsc --noEmit",
 		"fix": "biome check --write . && tsc --noEmit",
-    "test": "vitest run"
+		"test": "vitest run",
+		"test:watch": "vitest",
+		"prepublishOnly": "npm run build"
 	},
 	"devDependencies": {
 		"@biomejs/biome": "latest",
 		"@cloudflare/workers-types": "latest",
 		"@types/bun": "latest",
+		"vitest": "latest",
 		"wrangler": "latest"
 	},
 	"peerDependencies": {
