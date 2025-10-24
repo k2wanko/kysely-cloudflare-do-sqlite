@@ -1,0 +1,20 @@
+{
+	"name": "kysely-cloudflare-do-sqlite",
+	"version": "0.1.0",
+	"type": "module",
+	"scripts": {
+		"lint": "biome check && tsc --noEmit",
+		"fix": "biome check --write . && tsc --noEmit",
+    "test": "vitest run"
+	},
+	"devDependencies": {
+		"@biomejs/biome": "latest",
+		"@cloudflare/workers-types": "latest",
+		"@types/bun": "latest",
+		"wrangler": "latest"
+	},
+	"peerDependencies": {
+		"kysely": "*",
+		"typescript": "*"
+	}
+}

@@ -1,0 +1,27 @@
+{
+	"$schema": "../../node_modules/wrangler/config-schema.json",
+	"name": "tests",
+	"compatibility_date": "2025-01-16",
+	"durable_objects": {
+		"bindings": [
+			{
+				"name": "MY_DURABLE_OBJECT",
+				"class_name": "MyDurableObject"
+			}
+		]
+	},
+	"migrations": [
+		{
+			"tag": "v1",
+			"new_sqlite_classes": ["MyDurableObject"]
+		}
+	],
+	"vars": {
+		"VAR1": "value1",
+		"VAR2": 123,
+		"VAR3": {
+			"abc": "def"
+		},
+		"VAR4": "https://example.com"
+	}
+}
